@@ -26,7 +26,7 @@ function Header() {
                         Login
                     </a>
                     <a href="#!" className="btn-join">
-                        Join Now <ArrowRight size={16} />
+                        Join Us <ArrowRight size={16} />
                     </a>
                 </div>
             </nav>
