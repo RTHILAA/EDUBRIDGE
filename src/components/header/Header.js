@@ -1,12 +1,11 @@
 import React from "react";
-import "./Header.css";
-import { ArrowRight } from "lucide-react";
+import { GraduationCap, ArrowRight } from "lucide-react";
 
 function Header() {
     return (
         <div className="header">
             <nav>
-                <h3 className="logo">EduBridge</h3>
+                <h3 className="logo"><GraduationCap/> EduBridge</h3>
                 <ul>
                     <li>
                         <a href="#!">Home</a>
