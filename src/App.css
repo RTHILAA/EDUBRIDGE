@@ -117,38 +117,43 @@ p {
 /* START HOME */
 .container {
   background-color: var(--dark-blue);
-}
-
-.content {
-  width: 450px;
   height: 90vh;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  margin: auto;
-  color: white;
-  
+  align-items: center;
 }
 
-.content span {
+.content-header {
+  width: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-header span {
   color: var(--red);
   font-weight: 600;
 }
 
-.content h1 {
+.content-header h1 {
   color: var(--light-pink);
   font-size: 40px;
 }
 
-.content p {
+.content-header p {
   color: var(--light-pink);
 }
 
 .btn-quote-learn a {
   text-decoration: none;
   font-weight: 500;
+}
+
+.btn-quote-learn {
+ margin-bottom: 30px;
 }
 
 .btn-quote {
@@ -166,4 +171,33 @@ p {
   border: 1px solid var(--red);
   color: var(--red);
 }
+
+/* START CARDS */
+.content-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card p {
+  color: var(--light-gray);
+  font-weight: 600;
+}
+
+.red-line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--red);
+}
+/* END CARDS */
 /* END HOME */
