@@ -1,6 +1,7 @@
 import React from 'react'
-import Card from './Card'
-import CardData from './CardData'
+import Cards from './Cards'
+import CardsData from '../data/CardsData'
+
 
 function Home() {
   return (
@@ -15,8 +16,8 @@ function Home() {
             </div>
              </div>
             <div className="content-cards">
-            {CardData.map((card) => (
-                <Card 
+            {CardsData.map((card) => (
+                <Cards
                     key={card.id}
                     icon={card.icon}
                     title={card.title}
