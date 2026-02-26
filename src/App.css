@@ -180,7 +180,7 @@ p {
   gap: 30px;
 }
 
-.card {
+.cards {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -189,7 +189,7 @@ p {
   border-radius: 20px;
 }
 
-.card p {
+.cards p {
   color: var(--light-gray);
   font-weight: 600;
 }
