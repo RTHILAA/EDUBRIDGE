@@ -1,12 +1,12 @@
 import React from 'react'
-import Cards from './Cards'
-import CardsData from '../data/CardsData'
+import HomeData from '../data/HomeData'
+import HomeCards from '../../cards/HomeCards'
 
 
 function Home() {
   return (
-    <div className='container'>
-        <div className="content-header">
+    <div className='home-container'>
+        <div className="home-header-content">
             <span>Join Us</span>
             <h1>Best Learning Opportunities</h1>
             <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
@@ -15,9 +15,9 @@ function Home() {
             <a href="#!" className="btn-learn">Learn More</a>
             </div>
              </div>
-            <div className="content-cards">
-            {CardsData.map((card) => (
-                <Cards
+            <div className="home-cards-content">
+            {HomeData.map((card) => (
+                <HomeCards
                     key={card.id}
                     icon={card.icon}
                     title={card.title}

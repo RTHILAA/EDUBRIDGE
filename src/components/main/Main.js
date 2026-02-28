@@ -1,10 +1,13 @@
 import React from 'react'
-import Home from '../main/home/Home'
+import Home from './home/Home'
+import Courses from './courses/Courses'
+
 
 function Main() {
   return (
     <>
-    <Home/>
+    <Home />
+    <Courses/>
     </>
   )
 }
