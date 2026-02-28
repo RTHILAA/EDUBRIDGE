@@ -12,9 +12,8 @@
   --light-sky-blue: #B2E3FF;
   --light-orange: #E77C40;
   --red: #E74040;
-  --light-pink: #FFDCD1;
   --light-gray: #737373;
-  --yellow: #F3CD03;
+  --yellow: #FACC15;
   --green: #2DC071;
   --light-green: #B9EAA8;
 }
@@ -30,6 +29,8 @@ p {
 /* START HEADER */
 .header {
   background-color: var(--dark-blue);
+  position: fixed;
+  width: 100%;
 }
 
 .header nav {
@@ -113,9 +114,9 @@ p {
 }
 /* END HEADER */
 
-
+/* START MAIN */
 /* START HOME */
-.container {
+.home-container {
   background-color: var(--dark-blue);
   height: 90vh;
   display: flex;
@@ -124,7 +125,7 @@ p {
   align-items: center;
 }
 
-.content-header {
+.home-header-content {
   width: 450px;
   text-align: center;
   display: flex;
@@ -133,18 +134,18 @@ p {
   gap: 20px;
 }
 
-.content-header span {
+.home-header-content span {
   color: var(--red);
   font-weight: 600;
 }
 
-.content-header h1 {
-  color: var(--light-pink);
+.home-header-content h1 {
+  color: white;
   font-size: 40px;
 }
 
-.content-header p {
-  color: var(--light-pink);
+.home-header-content p {
+  color: var(--light-gray);
 }
 
 .btn-quote-learn a {
@@ -172,15 +173,15 @@ p {
   color: var(--red);
 }
 
-/* START CARDS */
-.content-cards {
+/* START HOME CARDS */
+.home-cards-content {
   display: flex;
   justify-content: space-between;
   width: 85%;
   gap: 30px;
 }
 
-.cards {
+.home-cards {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -189,7 +190,11 @@ p {
   border-radius: 20px;
 }
 
-.cards p {
+.home-cards h3 {
+  color: var(--dark-blue);
+}
+
+.home-cards p {
   color: var(--light-gray);
   font-weight: 600;
 }
@@ -199,5 +204,58 @@ p {
   height: 2px;
   background-color: var(--red);
 }
-/* END CARDS */
+/* END HOME CARDS */
 /* END HOME */
+
+/* START COURSES */
+.courses-header-content span {
+  color: var(--sky-blue);
+  font-weight: 600;
+}
+
+.courses-header-content h2 {
+  color: var(--dark-blue);
+  font-size: 35px;
+}
+
+.courses-header-content p {
+  color: var(--light-gray);
+}
+
+.courses-cards-content {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  gap: 30px;
+}
+
+.courses-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.courses-card h3 {
+  color: var(--dark-blue);
+}
+
+.courses-card p {
+  color: var(--light-gray);
+  font-weight: 600;
+}
+
+.courses-card img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.rating svg {
+  stroke: var(--yellow); 
+  fill: var(--yellow);  
+}
+/* END COURSES */
+
+/* END MAIN */
