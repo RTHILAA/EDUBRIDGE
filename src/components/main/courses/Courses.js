@@ -1,6 +1,6 @@
 import React from 'react'
 import CoursesData from '../data/CoursesData'
-import CoursesCards from '../../cards/CoursesCards'
+import CourseCard from '../../cards/CourseCard'
 
 function Courses() {
     return (
@@ -10,9 +10,9 @@ function Courses() {
                 <h2>Make Online education accessible</h2>
                 <p>Education is the most powerful tool to unlock potential, ignite curiosity, and shape a brighter future. At our platform, we believe in making learning accessible, engaging, and transformative, empowering students to achieve their dreams and build the skills they need to succeed ever-changing world.</p>
             </div>
-            <div className="courses-cards-content">
+            <div className="course-card-content">
                 {CoursesData.map((course) => (
-                    <CoursesCards
+                    <CourseCard
                         key={course.id}
                         img={course.img}
                         department={course.department}

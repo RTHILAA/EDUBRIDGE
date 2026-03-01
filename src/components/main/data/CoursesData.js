@@ -9,7 +9,7 @@ const CoursesData = [
     img: UI_UX,
     department: "Graphic Design",
     title: "UI & UX Design",
-    rating: "4.8 (1.4k reviews)",
+    rating: "4.8",
     description:
       "Learn the fundamentals of UI & UX design and build intuitive, user-friendly digital experiences. This course guides you through design principles, wireframing, prototyping, and modern design tools used by professionals.",
     sales: "120+ Sales",
@@ -24,7 +24,7 @@ const CoursesData = [
     img: ProjectDesign,
     department: "Software Development",
     title: "Project Design",
-    rating: "4.6 (980 reviews)",
+    rating: "4.6",
     description:
       "Master the process of planning and designing successful software projects. Learn how to structure ideas, create efficient workflows, and transform concepts into well-organized and scalable digital solutions.",
     sales: "190+ Sales",
@@ -39,7 +39,7 @@ const CoursesData = [
     img: WebDevelopment,
     department: "Web Development",
     title: "HTML, CSS & JavaScript",
-    rating: "4.9 (2.3k reviews)",
+    rating: "4.9",
     description:
       "Build modern and responsive websites from scratch using HTML, CSS, and JavaScript. Learn core web development concepts, layout techniques, interactivity, and best practices to start your frontend development journey.",
     sales: "320+ Sales",
