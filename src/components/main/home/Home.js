@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeData from '../data/HomeData'
-import HomeCards from '../../cards/HomeCards'
+import HomeCard from '../../cards/HomeCard'
 
 
 function Home() {
@@ -15,9 +15,9 @@ function Home() {
             <a href="#!" className="btn-learn">Learn More</a>
             </div>
              </div>
-            <div className="home-cards-content">
+            <div className="home-card-content">
             {HomeData.map((card) => (
-                <HomeCards
+                <HomeCard
                     key={card.id}
                     icon={card.icon}
                     title={card.title}
