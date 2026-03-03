@@ -206,7 +206,6 @@ p {
 
 /* START COURSES */
 .courses-container {
-  background-color: var(--light-sky-blue);
   padding: 50px 100px;
 }
 
@@ -240,7 +239,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #3333;
+  background-color: #F8F8F8;
   padding: 20px;
   border-radius: 0 0 20px 20px;
 }
@@ -308,7 +307,33 @@ p {
   font-weight: 500;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
+}
+
+.course-details p {
+  color: var(--light-gray);
+}
+
+.course-details .sales {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.course-duration-lessons  {
+  display: flex;
+  gap: 20px;
+}
+
+.course-duration-lessons span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--light-gray);
+}
+
+.course-duration-lessons svg {
+  color: var(--sky-blue);
 }
 /* END COURSES */
 /* END MAIN */
