@@ -1,6 +1,6 @@
 import React from 'react'
-import CoursesData from '../data/CoursesData'
-import CourseCard from '../../cards/CourseCard'
+import CoursesData from '../Data/CoursesData'
+import CourseCard from '../Cards/CourseCard'
 
 function Courses() {
     return (
