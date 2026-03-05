@@ -1,7 +1,6 @@
 import React from 'react'
-import HomeData from '../data/HomeData'
-import HomeCard from '../../cards/HomeCard'
-
+import HomeData from '../Data/HomeData'
+import HomeCard from '../Cards/HomeCard'
 
 function Home() {
   return (
