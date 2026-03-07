@@ -19,7 +19,7 @@
 }
 
 body {
- font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -31,6 +31,7 @@ p {
   background-color: var(--dark-blue);
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header nav {
@@ -106,10 +107,8 @@ p {
   border-radius: 20px;
   gap: 5px;
 }
-
 /* END HEADER */
 
-/* START MAIN */
 /* START HOME */
 .home-container {
   background-color: var(--dark-blue);
@@ -150,7 +149,7 @@ p {
 }
 
 .home-container .home-header-content .btn-quote-learn {
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .home-container .home-header-content .btn-quote-learn .btn-quote {
@@ -234,11 +233,11 @@ p {
 }
 
 .course-card-content .course-card {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #F8F8F8;
- border-radius: 20px;
+  border-radius: 20px;
 }
 
 .course-card-content .course-card .course-card-image {
@@ -285,8 +284,8 @@ p {
 }
 
 .course-card-content .course-card .course-details .department-rating .rating svg {
-  stroke: var(--yellow); 
-  fill: var(--yellow);  
+  stroke: var(--yellow);
+  fill: var(--yellow);
 }
 
 .course-card-content .course-card .course-details h3 {
@@ -313,7 +312,7 @@ p {
   font-weight: 600;
 }
 
-.course-card-content .course-card .course-details .course-duration-lessons  {
+.course-card-content .course-card .course-details .course-duration-lessons {
   display: flex;
   gap: 20px;
 }
@@ -342,6 +341,7 @@ p {
   gap: 5px;
 }
 /* END COURSES */
+
 /* START REVIEWS */
 .reviews-container {
   padding: 50px 50px 10px 50px;
@@ -368,17 +368,17 @@ p {
 
 .review-card-content {
   display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 20px 0;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 20px 0;
 }
 
 .review-card {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #F8F8F8;
- border-radius: 20px;
+  border-radius: 20px;
 }
 
 .review-card-content .review-card .review-card-image {
@@ -412,6 +412,49 @@ p {
 .review-card .review-details p {
   color: var(--light-gray);
 }
-
 /* END REVIEWS */
-/* END MAIN */
+
+/* START JOINUS */
+.join-us-container {
+  background-color: var(--dark-blue);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.join-us-container span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.join-us-container h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.join-us-container p {
+  color: white;
+  width: 650px;
+  text-align: center;
+}
+
+.join-us-container .email-subscribe .email {
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 350px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+.join-us-container .email-subscribe .btn-subscribe {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--red);
+  color: white;
+  cursor: pointer;
+}
+/* END JOINUS */
