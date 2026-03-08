@@ -1,24 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { GraduationCap, ArrowRight } from "lucide-react";
 
 function Header() {
     return (
         <div className="header">
             <nav>
-                <h3 className="logo"><GraduationCap/> EduBridge</h3>
+                <h3 className="logo"><GraduationCap /> EduBridge</h3>
                 <ul>
-                    <li>
-                        <a href="#!">Home</a>
-                    </li>
-                    <li>
-                        <a href="#!">Product</a>
-                    </li>
-                    <li>
-                        <a href="#!">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#!">Contact</a>
-                    </li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/product">Product</Link></li>
+                    <li><Link to="/pricing">Pricing</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
                 <div className="account">
                     <a href="#!" className="btn-login">
