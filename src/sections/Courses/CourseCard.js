@@ -8,8 +8,8 @@ function CourseCard({
   rating,
   description,
   sales,
-  price,
-  discount,
+  originalPrice,
+  discountPrice,
   duration,
   lessons,
 }) {
@@ -20,19 +20,19 @@ function CourseCard({
       </div>
       <div className="course-details">
       <div className="department-rating">
-        <p className="department">{department}</p>
+        <h3 className="department">{department}</h3>
         <span className="rating">
           <Star size={20} /> {rating}
         </span>
       </div>
-      <h3>{title}</h3>
+      <span className="title">{title}</span>
       <p className="description">{description}</p>
         <span className="sales">{sales}</span>
         <div className="price">
-          <span className="discount">
-            <del>{discount}</del>
+          <span className="original-price">
+            <del>${originalPrice}</del>
           </span>
-          <span className="original-price">{price}</span>
+          <span className="discount-price">${discountPrice}</span>
         </div>
       <div className="course-duration-lessons">
         <span>
