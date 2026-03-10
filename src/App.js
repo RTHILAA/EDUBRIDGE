@@ -1,29 +1,56 @@
-import React from 'react'
+// App.js
+import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./styles/App.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import "./styles/App.css";
+import "./styles/DarkMode.css";
+import "./styles/ResponsiveDesign.css";
+import { ThemeProvider } from './components/ThemeContext';
+import PageTransition from './components/PageTransition';
 import Header from './components/layout/Header/Header';
-import Home from "./pages/Home";
-import Product from "./pages/Product";
-import Pricing from "./pages/Pricing";
-import Contact from "./pages/Contact";
-import PageNotFound from "./pages/PageNotFound";
+import Home from "./pages/Home/Home";
+import Product from "./pages/Product/Product";
+import Pricing from "./pages/Pricing/Pricing";
+import Contact from "./pages/Contact/Contact";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Footer from './components/layout/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopOnRoute from './components/ScrollToTopOnRoute';
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      offset: 120,
+      disable: false,
+      mirror: true,
+      anchorPlacement: 'top-bottom',
+    });
+
+    AOS.refresh();
+  }, []);
+
   return (
-    <>
+    <ThemeProvider>
       <BrowserRouter>
+        <ScrollToTopOnRoute />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+        <PageTransition>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </PageTransition>
         <Footer />
+        <ScrollToTop />
       </BrowserRouter>
-    </>
+    </ThemeProvider>
   )
 }
