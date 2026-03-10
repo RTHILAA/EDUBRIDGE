@@ -8,25 +8,25 @@ const ReviewsData = [
         id: 1,
         img: Person1,
         name: "James Anderson",
-        job: "Frontend Developer",
+        job: "Junior Frontend Developer",
         rating: 5,
-        review: "EduBridge has been a game-changer for me. The courses are well-structured and the instructors are knowledgeable. I've gained so much confidence in my skills and landed my dream job thanks to this platform!"
+        review: "The React 19 track was a game-changer. I went from struggling with state management to building a full-scale Task App in weeks. The project-based learning is exactly what I needed!"
     },
     {
         id: 2,
         img: Person2,
         name: "Michael Chen",
-        job: "Full Stack Engineer",
-        rating: 4.5,
-        review: "The quality of education at EduBridge is exceptional. The interactive learning approach helped me grasp complex concepts easily and apply them in real-world scenarios."
+        job: "Project Manager",
+        rating: 4.8,
+        review: "The Project Design course helped me bridge the gap between technical teams and stakeholders. The UI/UX modules were especially eye-opening for our product workflow."
     },
     {
         id: 3,
         img: Person3,
         name: "Sophia Martinez",
-        job: "UI/UX Designer",
+        job: "Freelance Designer",
         rating: 4.7,
-        review: "I've taken multiple courses from EduBridge and each one has exceeded my expectations. The instructors are highly qualified and the content is always up-to-date with industry trends."
+        review: "EduBridge didn't just teach me tools; it taught me a professional mindset. I’ve already started using the 'Success Stories' framework for my own client presentations."
     },
 ]
 
