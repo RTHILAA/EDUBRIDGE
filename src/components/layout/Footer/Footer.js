@@ -2,6 +2,7 @@ import React from "react";
 import { GraduationCap, Mail, Phone, MapPin } from "lucide-react";
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
