@@ -1,0 +1,203 @@
+.pricing-page {
+  padding-top: 10vh;
+}
+
+.pricing-hero {
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.pricing-hero-content {
+  max-width: 800px;
+}
+
+.pricing-hero-content .badge {
+  background-color: var(--red);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.pricing-hero-content h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pricing-hero-content p {
+  color: #B0B0B0;
+  font-size: 18px;
+}
+
+.pricing-container {
+  padding: 80px 50px;
+  background-color: #f8f8f8;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.popular {
+  transform: scale(1.05);
+  border: 2px solid var(--red);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card.popular:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--red);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pricing-card h3 {
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.plan-description {
+  color: var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-bottom: 30px;
+}
+
+.currency {
+  font-size: 20px;
+  color: var(--dark-blue);
+  vertical-align: top;
+}
+
+.amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 0 5px;
+}
+
+.period {
+  color: var(--light-gray);
+  font-size: 16px;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.plan-btn.popular-btn {
+  background-color: var(--red);
+}
+
+.plan-btn:hover {
+  background-color: var(--dark-blue);
+}
+
+.plan-btn.popular-btn:hover {
+  background-color: #c13b3b;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+.features-list .not-included {
+  color: var(--light-gray);
+}
+
+.faq-section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  color: var(--dark-blue);
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  text-align: left;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  color: var(--light-gray);
+  line-height: 1.6;
+}
