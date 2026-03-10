@@ -1,17 +1,18 @@
 import React from 'react'
+import './JoinUs.css'
 
 function JoinUs() {
   return (
-    <div className='join-us-container'>
-      <span>Practice Advice</span>
-     <h2>Join Our Community</h2>
-      <p>
-        Get expert advice and exclusive tips delivered straight to your inbox. 
-        Stay ahead of the curve with our weekly updates and professional insights.
+    <div className='join-us-container' data-aos="zoom-in-up" data-aos-duration="1200">
+      <span data-aos="fade-down">Stay Updated</span>
+      <h2 data-aos="fade-up" data-aos-delay="200">Join 5,000+ Learners</h2>
+      <p data-aos="fade-up" data-aos-delay="400">
+        Get exclusive career roadmaps and expert tips delivered straight to your inbox. 
+        Stay ahead of the curve with our weekly professional insights.
       </p>
-      <form className="email-subscribe">
-        <input type="email" className='email' placeholder="Enter your email" required />
-        <button type="submit" className='btn-subscribe'>Subscribe</button>
+      <form className="email-subscribe" data-aos="fade-up" data-aos-delay="600">
+        <input type="email" className='email' placeholder="Enter your professional email" required />
+        <button type="submit" className='btn-subscribe'>Get Free Access</button>
       </form>
     </div>
   )

@@ -1,0 +1,42 @@
+.join-us-container {
+  background-color: var(--dark-blue);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.join-us-container span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.join-us-container h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.join-us-container p {
+  color: white;
+  width: 650px;
+  text-align: center;
+}
+
+.join-us-container .email-subscribe .email {
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 350px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+.join-us-container .email-subscribe .btn-subscribe {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--red);
+  color: white;
+  cursor: pointer;
+}
