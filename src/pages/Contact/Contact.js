@@ -4,7 +4,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import './Contact.css';
 
 function Contact() {
-    // 1. ديما حط جميع الـ Hooks في الأول ديال الـ Component
   const [isLoading, setIsLoading] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
@@ -21,11 +20,10 @@ function Contact() {
     return () => clearTimeout(timer);
   }, []);
 
-  // 2. الـ Early Return (ديال التحميل) خاصو يجي مورا الـ Hooks
   if (isLoading) {
     return <LoadingSpinner />;
   }
-  
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -116,7 +114,7 @@ function Contact() {
           <div className="contact-info-wrapper" data-aos="fade-left" data-aos-duration="1000">
             <h2>Contact Information</h2>
             <p>Reach out to us through any of these channels and we'll respond as quickly as possible.</p>
-            
+
             <div className="contact-details">
               <div className="contact-item" data-aos="fade-up" data-aos-delay="200">
                 <div className="contact-icon">
