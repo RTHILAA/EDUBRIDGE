@@ -55,10 +55,10 @@ function Courses() {
 
     return (
         <div className='courses-container'>
-            <div className="courses-header-content" data-aos="fade-up">
-                <span data-aos="fade-down">Explore Programs</span>
+            <div className="courses-header-content" data-aos="fade-up" data-aos-duration="600">
+                <span data-aos="fade-down" data-aos-delay="100">Explore Programs</span>
                 <h2 data-aos="zoom-in" data-aos-delay="200">Master In-Demand Skills</h2>
-                <p data-aos="fade-up" data-aos-delay="400">
+                <p data-aos="fade-up" data-aos-delay="300">
                     Advance your career with expert-led courses designed for real-world success.
                     From creative design to technical development, start your journey today.
                 </p>
@@ -67,8 +67,8 @@ function Courses() {
                 {CoursesData.map((course, index) => (
                     <div key={course.id}
                         data-aos="zoom-in"
-                        data-aos-delay={300 * (index + 1)}
-                        data-aos-duration="1000">
+                        data-aos-delay={150 * (index + 1)}
+                        data-aos-duration="600">
                         <div className="course-card">
                             <div className="course-card-image">
                                 <img src={course.img} alt={course.title} />
