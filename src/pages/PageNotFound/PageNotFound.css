@@ -221,7 +221,6 @@
   transform: scale(1.05);
 }
 
-/* Optional: Add a fun hover effect to the error number */
 .error-number:hover {
   animation: shake 0.5s ease-in-out;
 }
@@ -242,4 +241,107 @@
   }
 }
 
+/* Tablet Styles (481px - 949px) */
+@media screen and (min-width: 481px) and (max-width: 949px) {
+  .not-found-content {
+    padding: 40px;
+  }
 
+  .error-number {
+    font-size: 120px;
+  }
+
+  .not-found-content h1 {
+    font-size: 36px;
+  }
+
+  .error-message {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .resources-grid {
+    gap: 15px;
+  }
+
+  .resource-card {
+    padding: 20px;
+  }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .not-found-page {
+    padding: 60px 15px;
+  }
+
+  .not-found-content {
+    padding: 30px 20px;
+  }
+
+  .error-number {
+    font-size: 80px;
+  }
+
+  .error-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .not-found-content h1 {
+    font-size: 24px;
+  }
+
+  .error-message {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .suggestions h3 {
+    font-size: 18px;
+  }
+
+  .suggestion-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .suggestion-link {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .helpful-resources h3 {
+    font-size: 18px;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .resource-card {
+    padding: 15px;
+  }
+
+  .resource-card h4 {
+    font-size: 16px;
+  }
+
+  .search-suggestion {
+    padding: 30px 20px;
+  }
+
+  .search-suggestion p {
+    font-size: 16px;
+  }
+
+  .contact-support-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+}

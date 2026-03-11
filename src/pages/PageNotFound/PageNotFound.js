@@ -5,7 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import './PageNotFound.css';
 
 function PageNotFound() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading
@@ -23,15 +23,15 @@ function PageNotFound() {
       <div className="not-found-container">
         <div className="not-found-content">
           <div className="error-number">404</div>
-          
+
           <div className="error-icon">
             <AlertCircle size={80} />
           </div>
-          
+
           <h1>Page Not Found</h1>
-          
+
           <p className="error-message">
-            Oops! The page you're looking for seems to have wandered off. 
+            Oops! The page you're looking for seems to have wandered off.
             It might have been moved, deleted, or never existed.
           </p>
 
