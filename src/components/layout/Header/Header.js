@@ -19,14 +19,14 @@ function Header() {
         <div className="header">
             <nav>
                 <h3 className="logo"><GraduationCap /> EduBridge</h3>
-                
+
                 {/* Desktop Navigation */}
                 <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                     <li><Link to="/product" onClick={closeMenu}>Product</Link></li>
                     <li><Link to="/pricing" onClick={closeMenu}>Pricing</Link></li>
                     <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-                    
+
                     {/* Mobile Account Buttons */}
                     <li className="mobile-only">
                         <div className="mobile-account">
