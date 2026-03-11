@@ -8,16 +8,16 @@ function Product() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 300);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return <LoadingSpinner />;
   }
+  
   const features = [
     {
       icon: <BookOpen size={32} />,
@@ -45,16 +45,16 @@ function Product() {
     <div className="product-page">
       {/* Hero Section */}
       <div className="product-hero">
-        <div className="product-hero-content" data-aos="fade-up">
-          <span className="badge" data-aos="fade-down">Our Products</span>
+        <div className="product-hero-content" data-aos="fade-up" data-aos-duration="800">
+          <span className="badge" data-aos="fade-down" data-aos-delay="100">Our Products</span>
           <h1 data-aos="zoom-in" data-aos-delay="200">Transform Your Career With Our Learning Solutions</h1>
-          <p data-aos="fade-up" data-aos-delay="400">Choose from our comprehensive suite of educational products designed to accelerate your professional growth.</p>
+          <p data-aos="fade-up" data-aos-delay="300">Choose from our comprehensive suite of educational products designed to accelerate your professional growth.</p>
         </div>
       </div>
 
       {/* Features Section */}
       <div className="features-section">
-        <div className="features-header" data-aos="fade-up">
+        <div className="features-header" data-aos="fade-up" data-aos-duration="600">
           <span>Why Choose Us</span>
           <h2>Everything You Need to Succeed</h2>
           <p>Our platform combines expert knowledge with practical application to deliver real results.</p>
@@ -64,7 +64,8 @@ function Product() {
             <div className="feature-card"
               key={index}
               data-aos="fade-up"
-              data-aos-delay={200 * (index + 1)}>
+              data-aos-delay={100 * (index + 1)}
+              data-aos-duration="600">
               <div className="feature-icon">{feature.icon}</div>
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>
@@ -81,13 +82,13 @@ function Product() {
 
       {/* Learning Paths */}
       <div className="learning-paths">
-        <div className="paths-header" data-aos="fade-up">
+        <div className="paths-header" data-aos="fade-up" data-aos-duration="600">
           <span>Learning Paths</span>
           <h2>Structured Learning Journeys</h2>
           <p>Follow our carefully curated learning paths to master your chosen field.</p>
         </div>
         <div className="paths-grid">
-          <div className="path-card" data-aos="flip-left" data-aos-delay="200">
+          <div className="path-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="600">
             <h3>Frontend Development</h3>
             <p>Master React, Vue, and modern JavaScript</p>
             <ul>
@@ -97,7 +98,7 @@ function Product() {
             </ul>
             <a href="#!" className="path-btn">Explore Path</a>
           </div>
-          <div className="path-card" data-aos="flip-left" data-aos-delay="400">
+          <div className="path-card" data-aos="flip-left" data-aos-delay="200" data-aos-duration="600">
             <h3>UI/UX Design</h3>
             <p>Learn design thinking and prototyping</p>
             <ul>
@@ -107,7 +108,7 @@ function Product() {
             </ul>
             <a href="#!" className="path-btn">Explore Path</a>
           </div>
-          <div className="path-card" data-aos="flip-left" data-aos-delay="600">
+          <div className="path-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="600">
             <h3>Data Science</h3>
             <p>Python, Machine Learning, and Analytics</p>
             <ul>
