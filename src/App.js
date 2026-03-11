@@ -18,16 +18,13 @@ import ScrollToTopOnRoute from './components/ScrollToTopOnRoute';
 export default function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
+      duration: 600,        
+      easing: "ease-out", 
       once: true,
-      offset: 120,
+      offset: 80,        
       disable: false,
-      mirror: true,
       anchorPlacement: 'top-bottom',
     });
-
-    AOS.refresh();
   }, []);
 
   return (
