@@ -35,14 +35,15 @@ function Reviews() {
         "EduBridge didn't just teach me tools; it taught me a professional mindset. I’ve already started using the 'Success Stories' framework for my own client presentations.",
     },
   ];
+  
   return (
     <div className="reviews-container">
-      <div className="reviews-header-content" data-aos="fade-up">
-        <span data-aos="fade-down">Success Stories</span>
+      <div className="reviews-header-content" data-aos="fade-up" data-aos-duration="600">
+        <span data-aos="fade-down" data-aos-delay="100">Success Stories</span>
         <h2 data-aos="zoom-in" data-aos-delay="200">
           Real Stories, Real Success
         </h2>
-        <p data-aos="fade-up" data-aos-delay="400">
+        <p data-aos="fade-up" data-aos-delay="300">
           At <strong>EduBridge</strong>, our community is built on the success
           of our learners. Discover how our students have bridged the gap
           between learning and their dream careers.
@@ -53,8 +54,8 @@ function Reviews() {
           <div
             key={review.id}
             data-aos="fade-right"
-            data-aos-delay={400 * (index + 1)}
-            data-aos-duration="1000"
+            data-aos-delay={200 * (index + 1)}
+            data-aos-duration="600"
           >
             <div className="review-card">
               <div className="review-card-image">
