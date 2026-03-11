@@ -8,16 +8,16 @@ function Pricing() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 300);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return <LoadingSpinner />;
   }
+  
   const plans = [
     {
       name: "Basic",
@@ -70,10 +70,10 @@ function Pricing() {
     <div className="pricing-page">
       {/* Hero Section */}
       <div className="pricing-hero">
-        <div className="pricing-hero-content" data-aos="fade-up">
-          <span className="badge" data-aos="fade-down">Pricing Plans</span>
+        <div className="pricing-hero-content" data-aos="fade-up" data-aos-duration="800">
+          <span className="badge" data-aos="fade-down" data-aos-delay="100">Pricing Plans</span>
           <h1 data-aos="zoom-in" data-aos-delay="200">Choose the Perfect Plan for Your Learning Journey</h1>
-          <p data-aos="fade-up" data-aos-delay="400">Flexible pricing options designed to fit your goals and budget. All plans include a 14-day money-back guarantee.</p>
+          <p data-aos="fade-up" data-aos-delay="300">Flexible pricing options designed to fit your goals and budget. All plans include a 14-day money-back guarantee.</p>
         </div>
       </div>
 
@@ -84,7 +84,8 @@ function Pricing() {
             <div className={`pricing-card ${plan.popular ? 'popular' : ''}`}
               key={index}
               data-aos="zoom-in"
-              data-aos-delay={300 * (index + 1)}>
+              data-aos-delay={150 * (index + 1)}
+              data-aos-duration="600">
               {plan.popular && <span className="popular-badge">Most Popular</span>}
               <h3>{plan.name}</h3>
               <p className="plan-description">{plan.description}</p>
@@ -117,21 +118,21 @@ function Pricing() {
 
       {/* FAQ Section */}
       <div className="faq-section">
-        <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+        <h2 data-aos="fade-up" data-aos-duration="600">Frequently Asked Questions</h2>
         <div className="faq-grid">
-          <div className="faq-item" data-aos="fade-right" data-aos-delay="200">
+          <div className="faq-item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">
             <h3>Can I switch plans later?</h3>
             <p>Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
           </div>
-          <div className="faq-item" data-aos="fade-left" data-aos-delay="400">
+          <div className="faq-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
             <h3>Is there a student discount?</h3>
             <p>We offer special pricing for students. Contact our support team with your student ID to get 20% off any plan.</p>
           </div>
-          <div className="faq-item" data-aos="fade-right" data-aos-delay="600">
+          <div className="faq-item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="600">
             <h3>What payment methods do you accept?</h3>
             <p>We accept all major credit cards, PayPal, and bank transfers for enterprise plans.</p>
           </div>
-          <div className="faq-item" data-aos="fade-left" data-aos-delay="800">
+          <div className="faq-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="600">
             <h3>Can I cancel anytime?</h3>
             <p>Yes, you can cancel your subscription at any time. You'll continue to have access until the end of your billing period.</p>
           </div>
