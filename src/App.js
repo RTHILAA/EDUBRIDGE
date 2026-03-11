@@ -1,11 +1,8 @@
-// App.js
 import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./styles/App.css";
-import "./styles/DarkMode.css";
-import "./styles/ResponsiveDesign.css";
 import { ThemeProvider } from './components/ThemeContext';
 import PageTransition from './components/PageTransition';
 import Header from './components/layout/Header/Header';
