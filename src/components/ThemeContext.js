@@ -20,7 +20,7 @@ export const ThemeProvider = ({ children }) => {
   // Update localStorage when theme changes
   useEffect(() => {
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    
+
     // Update document class for global styling
     if (isDarkMode) {
       document.documentElement.classList.add('dark-mode');
