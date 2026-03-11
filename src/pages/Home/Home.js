@@ -1,11 +1,10 @@
-// pages/Home.js (example with loading state)
 import React, { useState, useEffect } from 'react';
-import HomeData from '../../sections/Home/HomeData';
-import HomeCard from '../../sections/Home/HomeCard';
+import { BookOpen, ChartLine, GraduationCap } from 'lucide-react';
 import Courses from '../../sections/Courses/Courses';
 import Reviews from '../../sections/Reviews/Reviews';
 import JoinUs from '../../sections/JoinUs/JoinUs';
 import LoadingSpinner from '../../components/LoadingSpinner';
+import './Home.css';
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,6 +21,31 @@ function Home() {
     return <LoadingSpinner />;
   }
 
+  const HomeData = [
+    {
+      id: 1,
+      icon: <BookOpen />,
+      title: "Digital Library",
+      description: "Access thousands of e-books, research papers, and study guides anytime, anywhere.",
+      color: "#E74040"
+    },
+    {
+      id: 2,
+      icon: <ChartLine />,
+      title: "Career Growth",
+      description: "Track your progress and gain industry-recognized certifications to boost your resume.",
+      color: "#2DC071"
+    },
+    {
+      id: 3,
+      icon: <GraduationCap />,
+      title: "Expert Mentors",
+      description: "Learn from industry professionals who bring real-world experience to your screen.",
+      color: "#23A6F0"
+    }
+
+  ]
+
   return (
     <div className='home-page'>
       <div className='home-container'>
@@ -37,12 +61,14 @@ function Home() {
         <div className="home-card-content">
           {HomeData.map((card, index) => (
             <div key={card.id} data-aos="fade-up" data-aos-delay={300 * (index + 1)}>
-              <HomeCard
-                icon={card.icon}
-                title={card.title}
-                description={card.description}
-                color={card.color}
-              />
+              <div className="home-card">
+                <span className="icon" style={{ color: card.color }}>
+                  {card.icon}
+                </span>
+                <h3>{card.title}</h3>
+                <span className="red-line"></span>
+                <p>{card.description}</p>
+              </div>
             </div>
           ))}
         </div>
