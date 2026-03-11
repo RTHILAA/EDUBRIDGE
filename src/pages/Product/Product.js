@@ -5,7 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import './Product.css';
 
 function Product() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading
@@ -61,10 +61,10 @@ function Product() {
         </div>
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div className="feature-card" 
-                 key={index}
-                 data-aos="fade-up" 
-                 data-aos-delay={200 * (index + 1)}>
+            <div className="feature-card"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={200 * (index + 1)}>
               <div className="feature-icon">{feature.icon}</div>
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>

@@ -117,7 +117,7 @@
 
 .feature-link:hover {
   gap: 10px;
-  color: var(--dark-blue);
+  color: #c13b3b;
 }
 
 .learning-paths {
@@ -208,4 +208,145 @@
 .path-btn:hover {
   background-color: #c13b3b;
   transform: translateY(-2px);
+}
+
+/* Tablet Styles (481px - 949px) */
+@media screen and (min-width: 481px) and (max-width: 949px) {
+  .product-page {
+    padding-top: 8vh;
+  }
+
+  .product-hero {
+    height: 95vh;
+  }
+
+  .product-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .features-section {
+    padding: 50px 30px;
+  }
+
+  .features-header h2 {
+    font-size: 28px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .learning-paths {
+    padding: 50px 30px;
+  }
+
+  .paths-header h2 {
+    font-size: 28px;
+  }
+
+  .paths-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .product-page {
+    padding-top: 8vh;
+  }
+
+  .product-hero {
+    height: 95vh;
+    padding: 0 20px;
+  }
+
+  .product-hero-content .badge {
+    font-size: 12px;
+  }
+
+  .product-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .product-hero-content p {
+    font-size: 14px;
+  }
+
+  .features-section {
+    padding: 40px 20px;
+  }
+
+  .features-header span {
+    font-size: 12px;
+  }
+
+  .features-header h2 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+
+  .features-header p {
+    font-size: 14px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 13px;
+  }
+
+  .learning-paths {
+    padding: 40px 20px;
+  }
+
+  .paths-header span {
+    font-size: 12px;
+  }
+
+  .paths-header h2 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+
+  .paths-header p {
+    font-size: 14px;
+  }
+
+  .paths-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .path-card {
+    padding: 30px 20px;
+  }
+
+  .path-card h3 {
+    font-size: 20px;
+  }
+
+  .path-card p,
+  .path-card ul li {
+    font-size: 13px;
+  }
+
+  .path-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
