@@ -5,7 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import './Pricing.css';
 
 function Pricing() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading
@@ -81,10 +81,10 @@ function Pricing() {
       <div className="pricing-container">
         <div className="pricing-grid">
           {plans.map((plan, index) => (
-            <div className={`pricing-card ${plan.popular ? 'popular' : ''}`} 
-                 key={index}
-                 data-aos="zoom-in" 
-                 data-aos-delay={300 * (index + 1)}>
+            <div className={`pricing-card ${plan.popular ? 'popular' : ''}`}
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={300 * (index + 1)}>
               {plan.popular && <span className="popular-badge">Most Popular</span>}
               <h3>{plan.name}</h3>
               <p className="plan-description">{plan.description}</p>

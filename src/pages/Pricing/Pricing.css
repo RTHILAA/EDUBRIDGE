@@ -55,21 +55,13 @@
   padding: 40px;
   border-radius: 20px;
   position: relative;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-card.popular {
   transform: scale(1.05);
   border: 2px solid var(--red);
-}
-
-.pricing-card:hover {
-  transform: translateY(-10px);
-}
-
-.pricing-card.popular:hover {
-  transform: scale(1.05) translateY(-10px);
 }
 
 .popular-badge {
@@ -83,12 +75,14 @@
   border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 
 .pricing-card h3 {
   color: var(--dark-blue);
   font-size: 24px;
   margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
 }
 
 .plan-description {
@@ -104,6 +98,7 @@
   font-size: 20px;
   color: var(--dark-blue);
   vertical-align: top;
+  transition: color 0.3s ease-in-out;
 }
 
 .amount {
@@ -111,11 +106,13 @@
   font-weight: 700;
   color: var(--dark-blue);
   margin: 0 5px;
+  transition: color 0.3s ease-in-out;
 }
 
 .period {
-  color: var(--light-gray);
+  color: var(--dark-blue);
   font-size: 16px;
+  transition: color 0.3s ease-in-out;
 }
 
 .plan-btn {
@@ -129,19 +126,13 @@
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 30px;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 .plan-btn.popular-btn {
   background-color: var(--red);
-}
-
-.plan-btn:hover {
-  background-color: var(--dark-blue);
-}
-
-.plan-btn.popular-btn:hover {
-  background-color: #c13b3b;
 }
 
 .features-list {
@@ -154,10 +145,11 @@
   gap: 10px;
   margin-bottom: 15px;
   color: var(--dark-blue);
+  transition: transform 0.2s ease-in-out;
 }
 
-.features-list .not-included {
-  color: var(--light-gray);
+.features-list svg {
+  transition: transform 0.2s ease-in-out;
 }
 
 .faq-section {
@@ -184,20 +176,254 @@
   padding: 30px;
   background-color: #f8f8f8;
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
+
+/* Pricing Card Hover */
+.pricing-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.popular:hover {
+  transform: scale(1.05) translateY(-15px);
+  box-shadow: 0 30px 40px rgba(193, 59, 59, 0.2);
+}
+
+.pricing-card:hover h3 {
+  color: var(--red);
+}
+
+.pricing-card.popular:hover h3 {
+  color: var(--red);
+}
+
+.pricing-card:hover .amount {
+  color: var(--red);
+}
+
+.pricing-card.popular:hover .amount {
+  color: var(--red);
+}
+
+.pricing-card:hover .currency {
+  color: var(--red);
+}
+
+.pricing-card.popular:hover .currency {
+  color: var(--red);
+}
+
+.pricing-card:hover .period {
+  color: var(--red);
+}
+
+.popular-badge:hover {
+  background-color: #c13b3b;
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 5px 15px rgba(193, 59, 59, 0.3);
+}
+
+/* Button Hover Effects */
+.plan-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.plan-btn:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plan-btn.popular-btn:hover {
+  background-color: #c13b3b;
+  box-shadow: 0 5px 20px rgba(193, 59, 59, 0.4);
+}
+
+.plan-btn:active {
+  transform: translateY(0);
+}
+
+/* Feature List Hover */
+.features-list li:hover {
+  transform: translateX(5px);
+}
+
+.features-list li:hover svg {
+  transform: scale(1.2);
+}
+
+/* FAQ Item Hover */
 .faq-item:hover {
-  transform: translateX(10px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateX(15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.faq-item h3 {
-  color: var(--dark-blue);
-  margin-bottom: 15px;
+.faq-item:hover h3 {
+  color: var(--red);
 }
 
-.faq-item p {
-  color: var(--light-gray);
-  line-height: 1.6;
+/* Tablet Styles (481px - 949px) */
+@media screen and (min-width: 481px) and (max-width: 949px) {
+  .pricing-page {
+    padding-top: 8vh;
+  }
+
+  .pricing-hero {
+    height: 95vh;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .pricing-container {
+    padding: 50px 30px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .pricing-card.popular {
+    transform: scale(1.02);
+  }
+
+  .pricing-card.popular:hover {
+    transform: scale(1.02) translateY(-10px);
+  }
+
+  .faq-section {
+    padding: 50px 30px;
+  }
+
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Tablet hover adjustments */
+  .pricing-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .faq-item:hover {
+    transform: translateX(10px);
+  }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .pricing-page {
+    padding-top: 8vh;
+  }
+
+  .pricing-hero {
+    height: 95vh;
+    padding: 0 20px;
+  }
+
+  .pricing-hero-content .badge {
+    font-size: 12px;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .pricing-hero-content p {
+    font-size: 14px;
+  }
+
+  .pricing-container {
+    padding: 40px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pricing-card {
+    padding: 30px 20px;
+  }
+
+  .pricing-card.popular {
+    transform: scale(1);
+  }
+
+  .pricing-card.popular:hover {
+    transform: translateY(-5px);
+  }
+
+  .amount {
+    font-size: 36px;
+  }
+
+  .plan-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .features-list li {
+    font-size: 13px;
+  }
+
+  .faq-section {
+    padding: 40px 20px;
+  }
+
+  .faq-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .faq-item {
+    padding: 20px;
+  }
+
+  .faq-item h3 {
+    font-size: 16px;
+  }
+
+  .faq-item p {
+    font-size: 13px;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .faq-item:hover {
+    transform: translateX(5px);
+  }
+
+  .plan-btn:hover::after {
+    width: 200px;
+    height: 200px;
+  }
 }
