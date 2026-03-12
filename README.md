@@ -8,7 +8,7 @@ A modern, responsive React application for an educational platform with courses,
 
 ---
 
-## 🎯 Live Demo
+## 🔗 Live Demo
 
 🔗 [EduBridge](https://rth-edubridge.netlify.app/)
 
