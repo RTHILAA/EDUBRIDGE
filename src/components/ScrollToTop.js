@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'; // زدنا useCallback
+import React, { useState, useEffect, useCallback } from 'react';
 import { ArrowUp } from 'lucide-react';
 
 const ScrollToTop = () => {
