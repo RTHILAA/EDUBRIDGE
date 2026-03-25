@@ -194,4 +194,4 @@ Have questions or suggestions? Feel free to reach out:
 - **Developer**: ANASS EL HARAZI
 - **Email**:  [anaswins35@gmail.com](mailto:anaswins35@gmail.com)
 - **LinkedIn**: [ANASS EL HARAZI](https://www.linkedin.com/in/anasselharazi/)
-- Instagram: [@a.elharazi](https://instagram.com/a.elharazi)
+- **Instagram**: [@a.elharazi](https://instagram.com/a.elharazi)
