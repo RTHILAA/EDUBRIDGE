@@ -10,7 +10,7 @@ A modern, responsive React application for an educational platform with courses,
 
 ## 🔗 Live Demo
 
-🔗 [EduBridge](https://rth-edubridge.netlify.app/)
+🔗 [EduBridge](https://rth-edubridge.vercel.app/)
 
 We would appreciate it if you decide to use this project. Please include credit when using it. Thank you! 🙏
 
